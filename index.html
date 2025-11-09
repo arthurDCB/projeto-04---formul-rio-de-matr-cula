@@ -16,12 +16,56 @@
   <div id="app">
     <main>
       <div class="main-container">
+        
         <img src="assets/icons/arrow-left-02.svg" alt="ícone de voltar">
         <span>voltar</span>
-      </div>
+        <h1>Formulário de matrícula</h1>
+        <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
 
-      <h1>Formulário de matrícula</h1>
-      <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
+        <form method="post" enctype="multipart/form-data">
+          <fieldset class="child-info">
+            <legend>Informações da criança</legend>
+
+            <div class="input-wrapper">
+              <label for="fullname">nome completo</label>
+              <input 
+              id="fullname" 
+              type="text" 
+              name="fullname"
+              placeholder="qual o nome da criança">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="birth">data de nascimento</label>
+              <input type="date" id="birth" name="birth">
+            </div>
+
+           <div class="select-wrapper">
+              <label for="gender">Sexo</label>
+              <select name="gender" id="gender">
+                <option value="female">Feminino</option>
+                <option value="male">Masculino</option>
+                <option value="NA">prefiro não responder</option>
+              </select>
+            </div>
+            
+            <div class="textarea">
+              <label for="medical-info">Informações Médicas</label>
+              <textarea name="medical-info" id="medical-info"
+                cols="30" rows="10"
+                placeholder="A criança possui alguma condição médica que a escola deva estar diente (caso sim, especifique)"></textarea>
+            </div>
+            <div class="droparea-wrapper">
+              <input type="file" id="birth-file" name="birth-file">
+              <img src="assets/icons/cloud-upload.svg" alt="">
+              <p>
+                Clique aqui para <br>
+                selecionar os arquivos
+              </p>
+            </div>
+          </fieldset>
+        </form>        
+      </div>
     </main>
 
     <aside>
