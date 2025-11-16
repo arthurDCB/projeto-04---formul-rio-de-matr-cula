@@ -1,4 +1,6 @@
-
+fieldset{
+  margin-top: 2rem;
+}
 input, textarea, select {
   appearance: none;
   width: 100%;
